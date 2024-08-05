@@ -16,6 +16,13 @@
   animation: rainbow 15s ease infinite;
 }
 
+.dot-bg {
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-image: radial-gradient(#a3a3a3 0.5px, #e5e5f7 0.5px);
+  background-size: 100% 100%;
+}
+
 /* Top down gray gradient */
 .bg-gray-gradient {
   background: linear-gradient(to bottom, #b5b5b5, #d9d9d900);
