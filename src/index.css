@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Faded rainbow background */
+.rainbow-bg {
+  background: linear-gradient(to right, 
+  rgba(255, 182, 193, 0.5),   
+  rgba(255, 204, 170, 0.5), 
+  rgba(255, 238, 170, 0.5), 
+  rgba(186, 238, 193, 0.5), 
+  rgba(178, 214, 255, 0.5),
+  rgba(210, 182, 255, 0.5)); 
+  background-size: 100% 100%;
+  animation: rainbow 15s ease infinite;
+}
+
+/* Top down gray gradient */
+.bg-gray-gradient {
+  background: linear-gradient(to bottom, #b5b5b5, #d9d9d900);
+}
+
+.font-pacifico {
+  font-family: 'Pacifico', cursive;
+}
+
+.skill-tag:hover {
+  @apply rainbow-bg font-pacifico;
+}
+
+.indigo-gradient {
+  background: linear-gradient(to right, #4b6cb7, #182848);
+}
+
+.social-icon {
+  @apply hover:scale-110 transition-all
+}
+
+
+
