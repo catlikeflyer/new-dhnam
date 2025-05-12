@@ -4,7 +4,7 @@ export const Navbar = () => {
       <div className="container mx-auto px-4 py-2 flex justify-between items-center">
         <div className="flex items-center">
           <h1 className="text-2xl font-black uppercase text-indigo-600">
-            DHNAM
+            DHNAM.
           </h1>
         </div>
         <div className="hidden md:flex space-x-4 text-xl">
