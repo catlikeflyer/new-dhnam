@@ -33,7 +33,7 @@ const SOFTSKILLS = [
   "Adaptability",
   "Public Speaking",
   "Storytelling",
-  "Flexibility"
+  "Flexibility",
 ];
 
 const TECHSKILLS = [
@@ -47,7 +47,9 @@ const TECHSKILLS = [
   "Azure",
   "Excel",
   "Git",
-  "C#"
+  "C#",
+  "Alteryx",
+  "Power Automate"
 ];
 
 const SkillTag = ({ skill }) => {
@@ -64,7 +66,7 @@ export const About = () => {
     <section className="bg-gray-200 py-20" id="about">
       <div className="container items-center mx-auto flex flex-col">
         <h1 className="text-4xl font-extrabold">Who am I?</h1>
-        <p className="p-4 w-full md:w-1/2 text-center sm:m-2 md:m-0">
+        <p className="p-4 w-full md:w-2/3 text-center sm:m-2 md:m-0">
           Software engineering graduate with a passion for building websites,
           data dashboards, and automatization tools. I am a quick learner and a
           team player, always looking for new challenges and opportunities to
@@ -73,13 +75,13 @@ export const About = () => {
         <div className={`h-1 w-1/6 bg-indigo-600 m-4 shadow-md`}></div>
         <div className="container flex md:flex-row flex-col items-start justify-between mx-auto">
           <div className="md:w-1/2 w-full p-10">
-            <h1 className="text-2xl font-bold">Education</h1>
+            <h1 className="text-3xl font-bold">Education</h1>
             <div className="mt-4">
               <h2 className="text-xl font-semibold">
                 Tec de Monterrey{" "}
                 <span className="text-gray-500 text-sm">2020-2024</span>
               </h2>
-              <p className="text-gray-500">
+              <p className="text-gray-500 italic">
                 BSc. in Software Engineering and Computer Science
               </p>
             </div>
@@ -88,8 +90,8 @@ export const About = () => {
                 University of Toronto{" "}
                 <span className="text-gray-500 text-sm">2023</span>
               </h2>
-              <p className="text-gray-500">
-                International exchange in the Faculty of Applied Sciences and
+              <p className="text-gray-500 italic">
+                Exchange program at the Faculty of Applied Sciences and
                 Engineering
               </p>
             </div>
@@ -111,10 +113,10 @@ export const About = () => {
             </div>
           </div>
           <div className="w-full md:w-1/2 p-10">
-            <h1 className="text-2xl font-bold">Work Experience</h1>
+            <h1 className="text-3xl font-bold">Experience</h1>
             {EXPERIENCE.map((exp, index) => (
               <div key={index} className="mt-6">
-                <p className="text-gray-500">{exp.company}</p>
+                <p className="text-gray-500 italic">{exp.company}</p>
                 <h2 className="text-xl font-semibold">
                   {exp.title}{" "}
                   <span className="text-gray-500 text-sm">{exp.date}</span>

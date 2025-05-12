@@ -1,5 +1,5 @@
 import { TypeAnimation } from "react-type-animation";
-import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaGithub, FaYoutube } from "react-icons/fa";
 import P1 from "../assets/me/1.jpg";
 import P2 from "../assets/me/2.jpg";
 import P3 from "../assets/me/3.jpg";
@@ -30,6 +30,10 @@ export const Hero = () => {
     <section
       className="py-20 min-h-screen flex flex-col justify-center items-center bg-cover bg-center bg-no-repeat transition-all duration-1000 bg-gray-100"
       id="home"
+      style={{
+        backgroundImage: `url(${"https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"})`,
+        backgroundSize: "cover",
+      }}
     >
       <div className="container mx-auto flex md:flex-row flex-col items-center justify-center ">
         <div className="md:w-1/3 p-10 w-full ">
@@ -41,7 +45,7 @@ export const Hero = () => {
         </div>
         <div className="md:w-2/3 w-full p-10">
           <h1 className="text-6xl font-bold">
-            Hi! I&apos;m <span className="text-indigo-600">Do Hyun Nam</span>
+            Hi! I&apos;m <span className="text-indigo-600 italic">Do Hyun Nam</span>
           </h1>
           <h2 className="text-4xl font-semibold text-gray-500">
             <TypeAnimation
@@ -88,6 +92,13 @@ export const Hero = () => {
               rel="noreferrer"
             >
               <FaGithub className="text-gray-800 social-icon" />
+            </a>
+            <a
+              href="https://www.youtube.com/@eldollis"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaYoutube className="text-red-500 social-icon" />
             </a>
           </div>
         </div>
